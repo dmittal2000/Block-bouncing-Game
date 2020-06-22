@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#game {
+    margin-left: 20%;
+    width: 700px;
+    height: 200px;
+    border-bottom: 2px solid black;
+}
+
+#character {
+    width: 20px;
+    height: 50px;
+    position: relative;
+    background-color: red;
+    top: 150px;
+}
+
+.animate {
+    animation: jump 500ms infinite;
+}
+
+#block {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: block 2s infinite linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    30% {
+        top: 100px;
+    }
+
+    70% {
+        top: 100px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}
+
+@keyframes block {
+    0% {
+        left: 480px;
+    }
+
+    100% {
+        left: -40px;
+    }
+}
+
+.reload{
+  margin-top: 2%;
+  font-size: 17px;
+}
+
+.rules{
+    font-size: 20px;
+    border: 1px dashed black;
+    padding: 3%;
+    margin: 5%;
+    font-family: 'Courier New', Courier, monospace;
+}
